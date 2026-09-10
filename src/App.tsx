@@ -5,10 +5,10 @@ import './App.css'
 import Banner from './Components/Banner'
 import Nav from './Components/Nav'
 import Technologies from './Components/Technologies'
-import { Http2ServerRequest } from 'http2'
+import type { ITechnologiesProps } from './Type/Type'
 
 
-const technologyPromise = async()=>{
+const technologyPromise = async():Promise <ITechnologiesProps>=>{
   const res = await fetch('./Technologies.json');
   const data = await res.json();
   return data;
