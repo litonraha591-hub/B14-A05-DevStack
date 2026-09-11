@@ -5,3 +5,4 @@
 @theme {
   --font-jakarta: "Plus Jakarta Sans", sans-serif;
 }
+@plugin "daisyui";

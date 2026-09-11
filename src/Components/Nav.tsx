@@ -13,10 +13,10 @@ const Nav = () => {
                <li>Projects</li>
                <li>About</li>
                <li>Contact</li>
-            </ul>m
+            </ul>
             <div className='flex gap-3'>
                 <button>Sign In</button>
-            <button className='bg-[#fb2987] px-3 py-1 rounded-[5px] text-white'>Sign In</button>
+            <button className='btn btn-active btn-secondary px-3 py-1 rounded-[5px] text-white'>Sign In</button>
             </div>
         </div>
         </div>

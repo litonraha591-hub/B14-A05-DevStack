@@ -1,11 +1,12 @@
 
 
 export interface ITechnologiesProps{
-       name: string,
+    name: string,
     image: string,
     description: string,
     category: string,
     level: string,
     rating: string,
-    badge: string
+    badge: string,
+   
 }

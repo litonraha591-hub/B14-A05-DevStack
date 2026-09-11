@@ -1,12 +1,13 @@
 
 
-import { Suspense, use } from 'react'
+import { Suspense, use, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner'
 import Nav from './Components/Nav'
 import Technologies from './Components/Technologies'
 import type { ITechnologiesProps } from './Type/Type'
 import TechnologyCard from './Components/TechnologyCard'
+
 
 
 const technologyPromise = async():Promise <ITechnologiesProps>=>{
@@ -16,6 +17,8 @@ const technologyPromise = async():Promise <ITechnologiesProps>=>{
 }
 
 function App() {
+const [cart,setCart]= useState<ITechnologiesProps[]>([])
+
 
   return (
     <>
@@ -23,9 +26,9 @@ function App() {
 <Nav></Nav>
 <Banner></Banner>
 <Suspense fallback={<h2>Loading.....</h2>}>
-  <Technologies technologiesPromise={technologyPromise()}></Technologies>
+  <Technologies technologiesPromise={technologyPromise()} cart={cart} setCart={setCart}></Technologies>
 </Suspense>
-    <TechnologyCard></TechnologyCard>
+   
 
     </>
   )
