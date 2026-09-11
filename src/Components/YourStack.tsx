@@ -16,15 +16,15 @@ const YourStack = ({selectedTechnology,setSelectedTechnology}:IYourStackProps) =
                 Your Stack
             
             </div>
-            <div>
+            <div className="">
                 {selectedTechnology.length} Technology Selected
             </div>
      { selectedTechnology.map((technology)=>{
         return( 
-         <div>
+         <div className="flex gap-3 items-center font-medium ">
              <img src={technology.image} alt={technology.name} className="h-[40px] w-[40px]" />
-             <h2>{technology.name}</h2>
-             <h2>{technology.category}</h2>
+             <div><h2>{technology.name}</h2>
+             <h2 className="text-[10px]">{technology.category}</h2></div>
          </div>
        
 
