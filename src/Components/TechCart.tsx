@@ -1,6 +1,8 @@
 import { useState, type Dispatch, type SetStateAction } from "react";
 import type { ITechnologiesProps } from "../Type/Type";
 
+import { FaCheck } from "react-icons/fa";
+
 
 interface ITechCartProps{
     technology:ITechnologiesProps ;
@@ -18,18 +20,19 @@ const TechCart = ({technology, cart, setCart, selectedTechnology, setSelectedTec
    const handleSelectedTechnology =()=>{
     setIsSelected(true)
 
-    // if(isSelected === true)
+    // if(isSelected === true)<FaCheck />
     // {
     //     alert(`${technology.name} added`)
     // }
 
     setSelectedTechnology([...selectedTechnology, technology]) 
+   
    }
 
 
     return (
-        <div>
-                <div className="bg-amber-400">
+        <div className="">
+                <div className="bg-white border-none shadow-gray-300 shadow-md rounded-[7px] ">
                        
                         <div className="m-1 p-4">
                         <div className="flex justify-between">
@@ -52,7 +55,7 @@ const TechCart = ({technology, cart, setCart, selectedTechnology, setSelectedTec
                        <button onClick={()=>handleSelectedTechnology()}
                         className="btn btn-active btn-secondary h-auto p-1 mt-2 container mx-auto"
                         disabled={isSelected === true ? true: false}>
-                        {isSelected === true ? "Added ot Stack":"Add to Stack"}</button>
+                        {isSelected === true ? <span className="flex items-center text-[#ed3b8e] gap-1 font-bold"> <FaCheck />Added to Stack</span>: "Add to Stack"}</button>
                   </div> 
                 </div>
         </div>
