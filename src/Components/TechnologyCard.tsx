@@ -6,16 +6,16 @@ import TechCart from "./TechCart";
 
 interface ITechnologyCardProps{
 technologies:ITechnologiesProps[]
-cart:ITechnologiesProps[];
-setCart:Dispatch<SetStateAction<ITechnologiesProps[]>>
+
 selectedTechnology: ITechnologiesProps[];
-setSelctedTechnology:Dispatch<SetStateAction<ITechnologiesProps[]>>
+setSelectedTechnology:Dispatch<SetStateAction<ITechnologiesProps[]>>
 
 }
 
 
-const TechnologyCard = ({technologies, cart, setCart, selectedTechnology, setSelectedTechnology}:ITechnologyCardProps) => {
-   
+const TechnologyCard = ({technologies, selectedTechnology, setSelectedTechnology}:ITechnologyCardProps) => {
+//    console.log(selectedTechnology,"selected")
+//    console.log(setSelectedTechnology,"set")
     
    
     return (
@@ -24,10 +24,11 @@ const TechnologyCard = ({technologies, cart, setCart, selectedTechnology, setSel
           <div className="lg:grid grid-cols-3 sm:grid grid-cols-1  gap-4 container mx-auto">
              
                   {
-                    technologies.map((technology,index:Number)=>{
+                    technologies.map((technology)=>{
                 return(
                     
-                <TechCart technology={technology} cart={cart} setCart ={setCart} key={index} selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology }></TechCart>
+                <TechCart technology={technology}  
+                selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology }></TechCart>
 
 
                         )

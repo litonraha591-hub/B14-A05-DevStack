@@ -1,6 +1,6 @@
 
 
-import { Suspense, use, useState } from 'react'
+import { Suspense} from 'react'
 import './App.css'
 import Banner from './Components/Banner'
 import Nav from './Components/Nav'
@@ -11,7 +11,7 @@ import Bottom from './Components/Bottom'
 
 
 
-const technologyPromise = async():Promise <ITechnologiesProps>=>{
+const technologyPromise = async():Promise <ITechnologiesProps[]>=>{
   const res = await fetch('./Technologies.json');
   const data = await res.json();
   return data;

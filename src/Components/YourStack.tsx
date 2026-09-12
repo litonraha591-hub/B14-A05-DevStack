@@ -6,7 +6,7 @@ import { Bounce, toast } from "react-toastify";
 
 interface IYourStackProps {
   selectedTechnology: ITechnologiesProps[];
-  setSelctedTechnology: Dispatch<SetStateAction<ITechnologiesProps[]>>;
+  setSelectedTechnology: Dispatch<SetStateAction<ITechnologiesProps[]>>;
 }
 
 const YourStack = ({
@@ -93,7 +93,7 @@ transition: Bounce,
         );
       })}
       <button
-        onClick={() => handleRemoveAllTechnology(selectedTechnology)}
+        onClick={() => handleRemoveAllTechnology()}
         className="btn btn-soft btn-secondary border-red-400 text-red-500 font-bold hover:text-white container mx-auto mt-5"
       >
         Remove All

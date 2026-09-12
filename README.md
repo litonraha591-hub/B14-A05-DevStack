@@ -49,3 +49,6 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
   1. Using react for creating this project.
   2. TypeScript are used in this project.
   3. Reusability.
+
+  # Answer of the React Questions.
+  1. 
