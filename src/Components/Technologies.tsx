@@ -43,6 +43,7 @@ const [cart, setCart] = useState<ITechnologiesProps[]>([]);
        selectedTechnology={selectedTechnology}
          setSelectedTechnology= {setSelectedTechnology}
         ></YourStack>
+        
         </div>
       </div>
     </div>
