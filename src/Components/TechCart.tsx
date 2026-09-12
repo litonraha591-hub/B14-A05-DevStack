@@ -44,7 +44,8 @@ transition: Bounce ,
 
     return (
         <div className={`${isSelected===true?"border border-[#ed3b8e] rounded-[7px]":""}`}>
-                <div className="bg-white border-none shadow-gray-300 shadow-md rounded-[7px] ">
+                <div className="bg-white border-none shadow-[0_0_10px_rgba(0,0,0,0.15)] rounded-[7px] transition duration-300
+                hover:-translate-y-2 ">
                        
                         <div className="m-1 p-4">
                         <div className="flex justify-between">
@@ -55,9 +56,9 @@ transition: Bounce ,
                     
                          <h3 className="font-bold text-2xl mt-2 mb-2">{technology.name}</h3>
                     
-                        <p className="text-gray-600 font-medium mb-2">{technology.description}</p>
+                        <p className=" text-[#475569]  mb-2">{technology.description}</p>
                         <div className="flex justify-between items-center gap-1">
-                        <button className=" bg-gray-400 px-2 border-none rounded-[10px] mt-2 mb-2">{technology.category}</button>
+                        <button className=" bg-gray-300 px-2 text-white border-none rounded-[10px] mt-2 mb-2">{technology.category}</button>
                         <h2 className="text-gray-600 font-medium">{technology.level}</h2>
                         
                            

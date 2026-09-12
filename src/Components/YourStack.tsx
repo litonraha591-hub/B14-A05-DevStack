@@ -34,7 +34,7 @@ const YourStack = ({
   };
   if (selectedTechnology.length === 0) {
     return (
-      <div className="ml-2 h-auto w-auto border-1 max-h-50 border-gray-200 rounded-[7px] m-1 p-2 shadow-gray-300 shadow-md container ">
+      <div className="ml-2 h-auto w-auto border max-h-50 border-gray-200 rounded-[7px] m-1 p-2 shadow-gray-300 shadow-md container ">
         <div className="text-2xl font-bold">Your Stack</div>
         <h2 className=" text-gray-500 mb-2 font-medium">
           No technologies selected yet
@@ -94,7 +94,7 @@ transition: Bounce,
       })}
       <button
         onClick={() => handleRemoveAllTechnology(selectedTechnology)}
-        className="btn btn-active btn-secondary container mx-auto mt-5"
+        className="btn btn-soft btn-secondary border-red-400 text-red-500 font-bold hover:text-white container mx-auto mt-5"
       >
         Remove All
       </button>

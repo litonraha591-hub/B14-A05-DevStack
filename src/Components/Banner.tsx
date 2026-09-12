@@ -16,7 +16,7 @@ next project.</p>
     </div>
 
         </div>
-<img src={banner} alt="" className='h-[400px]'/>
+<img src={banner} alt="" className=' ml-15'/>
         </div>
     );
 };
