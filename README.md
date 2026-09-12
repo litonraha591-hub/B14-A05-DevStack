@@ -32,9 +32,11 @@ If you are developing a production application, we recommend enabling type-aware
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
 
  -->
-Project Name: A-5 Dev Stack Builder Website
-A little description: This is a web application building ideal development stack. Here explores modern technologies these are used to handle modern web application. Here users can build stack to choose technologies that he might use.Here some description are shown about different technologies.
-Technology that i have used: 
+## Project Name: A-5 Dev Stack Builder Website
+
+## A little description: This is a web application building ideal development stack. Here explores modern technologies these are used to handle modern web application. Here users can build stack to choose technologies that he might use.Here some description are shown about different technologies.
+
+## Technology that i have used: 
 1. React js
 2. Tailwind CSS, DaisyUI
 3. TypeScript
@@ -43,3 +45,7 @@ Technology that i have used:
 6. Vite (built tool)
 7. Netlify for deployment
 
+## 3 features about my project:
+  1. Using react for creating this project.
+  2. TypeScript are used in this project.
+  3. Reusability.
