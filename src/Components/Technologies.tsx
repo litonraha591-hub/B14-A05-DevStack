@@ -24,8 +24,8 @@ const [cart, setCart] = useState<ITechnologiesProps[]>([]);
         </span>
       </h1>
       <p className="mb-5">Pick one technology per category to build your ideal stack.</p>
-      <div className="grid grid-cols-4">
-        <div className="grid col-span-3  justify-between">
+      <div className="lg:grid grid-cols-4 md:grid grid-cols-2  ">
+        <div className="grid col-span-3 justify-between ">
          <TechnologyCard technologies ={technologies}
          
          cart={cart}

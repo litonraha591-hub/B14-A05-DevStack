@@ -45,10 +45,10 @@ transition: Bounce ,
     return (
         <div className={`${isSelected===true?"border border-[#ed3b8e] rounded-[7px]":""}`}>
                 <div className="bg-white border-none shadow-[0_0_10px_rgba(0,0,0,0.15)] rounded-[7px] transition duration-300
-                hover:-translate-y-2 ">
+                hover:-translate-y-2  ">
                        
-                        <div className="m-1 p-4">
-                        <div className="flex justify-between">
+                        <div className="m-1 p-4 ">
+                        <div className="lg:flex justify-between  md:grid grid-cols-1">
                         <img src={technology.image} alt={technology.name} className="h=[40px] w-[40px]"/>
                        <button className="p-1 px-4 bg-[#f8ebf1] text-[#ed3b8e] border-none rounded-2xl"> {technology.badge}</button>
                         </div>

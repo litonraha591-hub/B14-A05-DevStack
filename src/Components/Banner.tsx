@@ -10,7 +10,7 @@ const Banner = () => {
 compare them side by side, and put together the stack that fits your
 next project.</p>
 
-    <div className='flex gap-3 mt-2'>
+    <div className='lg:flex gap-3 mt-2 md:grid grid-cols-1 gap-5'>
         <button className='font-semibold text-white bg-gradient-to-r  from-[#fa2cab] to-[#9812bd] border-none rounded-[5px] py-1 px-3'>Explore Technologies</button>
 <button className='font-semibold border rounded-[5px] py-1 px-10'>Learn More</button>
     </div>

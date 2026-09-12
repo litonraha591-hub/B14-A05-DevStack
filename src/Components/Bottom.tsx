@@ -3,7 +3,7 @@ import logo from "../assets/logo-text.png";
 const Bottom = () => {
   return (
     <div className="container mx-auto mt-20 font-jakarta py-3 ">
-        <div className="flex justify-between gap-3 border-y shadow-t-md  shadow-b-md border-gray-200 bg-white py-10 ">
+        <div className="lg:flex   justify-between gap-3 border-y shadow-t-md  shadow-b-md border-gray-200 bg-white py-10 md:grid grid-cols-2 ">
     <div>
           <img src={logo} alt="" />
       <p className="mt-2 text-gray-500">
@@ -42,7 +42,7 @@ const Bottom = () => {
         </ul>
     </div>           
     </div>
-    <div className="flex justify-between mt-4  text-[15px] text-gray-500">
+    <div className="lg:flex justify-between mt-4  text-[15px] text-gray-500 md:grid grid-cols-2">
         <p>© 2026 Dev Stack. All rights reserved.</p>
         <ul className="flex gap-3">
             <li>Privacy</li>

@@ -21,7 +21,7 @@ const TechnologyCard = ({technologies, cart, setCart, selectedTechnology, setSel
     return (
        
          
-          <div className="grid grid-cols-3 gap-4 container mx-auto">
+          <div className="lg:grid grid-cols-3 sm:grid grid-cols-1  gap-4 container mx-auto">
              
                   {
                     technologies.map((technology,index:Number)=>{
