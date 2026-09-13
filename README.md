@@ -33,7 +33,7 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
 
  -->
 ## Project Name:
- A-5 Dev Stack Builder Website
+ Dev Stack 
 
 ## A little description:
  This is a web application building ideal development stack. Here explores modern technologies these are used to handle modern web application. Here users can build stack to choose technologies that he might use.Here some description are shown about different technologies.
