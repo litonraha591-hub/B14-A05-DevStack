@@ -65,7 +65,7 @@ console.log(selectedTechnology,"selected");
 
           <p className=" text-[#475569]  mb-2">{technology.description}</p>
           <div className="flex justify-between items-center gap-1">
-            <button className=" bg-gray-300 px-2 text-white border-none rounded-[10px] mt-2 mb-2">
+            <button className=" bg-gray-200 px-2 font-medium border-none rounded-[10px] mt-2 mb-2">
               {technology.category}
             </button>
             <h2 className="text-gray-600 font-medium">{technology.level}</h2>
