@@ -77,3 +77,5 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
       </div>
     );
   }
+
+  7. When parent sent data for child using props. But child can`t sent data using props. This situation parent component sent a function and child return this callback function to sent data.
